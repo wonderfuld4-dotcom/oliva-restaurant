@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oliva Restaurant - Fresh food, authentic flavors, and memorable moments.">
+    <title>Oliva | Restaurant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">oliva<span>.</span></a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Open navigation" aria-expanded="false">☰</button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#story">Our Story</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact" class="nav-button">Find Us ↗</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="hero-content container">
+                <p class="eyebrow">WELCOME TO OLIVA</p>
+
+                <h1>Good food.<br>
+                    <span>Good mood.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Fresh ingredients, comforting flavors, and a little
+                    Italian inspiration in every bite. Your table is waiting.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-dark">Explore Our Menu ↗</a>
+                    <a href="#story" class="btn btn-outline">Our Story</a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="note-star">✦</span>
+                    Made with love, served with joy.
+                </div>
+            </div>
+
+            <div class="hero-image" role="img"
+                aria-label="Fresh Italian pasta served at a restaurant">
+                <div class="image-label">
+                    <span>FRESHLY PREPARED</span>
+                    <strong>Simply delicious.</strong>
+                </div>
+            </div>
+
+            <div class="hero-number">01 — 03</div>
+        </section>
+
+        <!-- STORY -->
+        <section class="story section container" id="story">
+            <div class="story-visual">
+                <div class="story-image"></div>
+                <div class="story-stamp">FRESH<br>EVERY DAY</div>
+            </div>
+
+            <div class="story-content">
+                <p class="eyebrow">A LITTLE ABOUT US</p>
+                <h2>Simple ingredients.<br>
+                    <span>Beautiful moments.</span>
+                </h2>
+
+                <p>
+                    At Oliva, we believe that great food brings people
+                    together. Our kitchen is inspired by fresh ingredients,
+                    classic Italian flavors, and the joy of sharing a meal.
+                </p>
+
+                <p>
+                    From a relaxed lunch to a special dinner, we're here
+                    to make every visit feel warm, welcoming, and delicious.
+                </p>
+
+                <a href="#menu" class="text-link">Discover our menu ↗</a>
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section class="menu-section section" id="menu">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">MADE FOR YOUR CRAVINGS</p>
+                    <h2>A taste of <span>Oliva.</span></h2>
+                    <p>Fresh favorites for every kind of appetite.</p>
+                </div>
+
+                <div class="menu-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="main">Main Dishes</button>
+                    <button class="filter-btn" data-filter="pizza">Pizza</button>
+                    <button class="filter-btn" data-filter="dessert">Desserts</button>
+                </div>
+
+                <div class="menu-grid">
+                    <article class="menu-card" data-category="main">
+                        <div class="food-image food-pasta">
+                            <span class="food-emoji">🍝</span>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Creamy Alfredo</h3>
+                                <span>$12</span>
+                            </div>
+                            <p>Silky cream sauce, parmesan, and fresh herbs.</p>
+                            <span class="food-category">MAIN DISH</span>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="pizza">
+                        <div class="food-image food-pizza">
+                            <span class="food-emoji">🍕</span>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Margherita Pizza</h3>
+                                <span>$14</span>
+                            </div>
+                            <p>Tomato, mozzarella, basil, and a crisp crust.</p>
+                            <span class="food-category">PIZZA</span>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="main">
+                        <div class="food-image food-salad">
+                            <span class="food-emoji">🥗</span>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Garden Fresh Salad</h3>
+                                <span>$9</span>
+                            </div>
+                            <p>Crunchy greens, cherry tomatoes, and house dressing.</p>
+                            <span class="food-category">MAIN DISH</span>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="dessert">
+                        <div class="food-image food-dessert">
+                            <span class="food-emoji">🍰</span>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Classic Cheesecake</h3>
+                                <span>$7</span>
+                            </div>
+                            <p>Rich, creamy cheesecake with a buttery base.</p>
+                            <span class="food-category">DESSERT</span>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="main">
+                        <div class="food-image food-lasagna">
+                            <span class="food-emoji">🍲</span>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Homestyle Lasagna</h3>
+                                <span>$15</span>
+                            </div>
+                            <p>Layers of pasta, tomato sauce, and melted cheese.</p>
+                            <span class="food-category">MAIN DISH</span>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="dessert">
+                        <div class="food-image food-tiramisu">
+                            <span class="food-emoji">🍮</span>
+                        </div>
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Sweet Tiramisu</h3>
+                                <span>$8</span>
+                            </div>
+                            <p>A soft coffee-flavored dessert with cocoa.</p>
+                            <span class="food-category">DESSERT</span>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="menu-disclaimer">
+                    Sample menu and prices for this portfolio project.
+                </p>
+            </div>
+        </section>
+
+        <!-- SPECIAL MESSAGE -->
+        <section class="quote-section container">
+            <span class="quote-mark">“</span>
+            <p>Good food is even better when it's shared.</p>
+            <span class="quote-caption">THE OLIVA WAY</span>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-inner">
+                <div>
+                    <p class="eyebrow">COME SAY HELLO</p>
+                    <h2>Your table.<br><span>Your moment.</span></h2>
+                    <p class="contact-text">
+                        Good food tastes better together. We'd love to see you.
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-icon">✦</span>
+                    <h3>Visit Oliva</h3>
+                    <p>Fresh flavors. Warm welcomes.</p>
+                    <a href="wonderfuld4@gmail.com" class="btn btn-light">
+                        Contact Us ↗
+                    </a>
+                    <small>Demo contact for portfolio purposes.</small>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <a href="#home" class="logo">oliva<span>.</span></a>
+        <p>Fresh flavors, happy moments.</p>
+        <a href="#home" class="back-top">Back to top ↑</a>
+        <p class="copyright">© <span id="year"></span> Oliva Restaurant · Student Portfolio Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
